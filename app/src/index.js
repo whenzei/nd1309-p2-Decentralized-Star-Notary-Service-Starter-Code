@@ -62,8 +62,8 @@ window.addEventListener("load", async function() {
   } else {
     console.warn("No web3 detected. Falling back to http://127.0.0.1:9545. You should remove this fallback when you deploy live",);
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    // App.web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:9545"),);
-    App.web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"),);
+    App.web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:9545"),);
+    // App.web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"),);
   }
 
   App.start();
